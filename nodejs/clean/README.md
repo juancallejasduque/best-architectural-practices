@@ -1,8 +1,8 @@
-# Best Architectural Practices
+# Clean Architecture
 
 Exercises to Clean Archiecture, DDD, templates and others best practices.
 
-## Topics and package sctruture
+## Hexagonal
 
 ´´´
 ->

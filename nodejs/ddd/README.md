@@ -1,4 +1,4 @@
-# Best Architectural Practices
+# Domain-Driven Design
 
 Exercises to Clean Archiecture, DDD, templates and others best practices.
 
