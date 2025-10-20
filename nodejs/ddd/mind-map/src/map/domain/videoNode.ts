@@ -6,7 +6,7 @@ import { Node } from "./node";
 export class VideoNode extends Node {
     private nodeId: string;
     private videoUrl: string;
-    private caption: string;
+    private title: string;
     private width: number;
     private height: number;
     private duration: number;
@@ -14,17 +14,16 @@ export class VideoNode extends Node {
     constructor(
         nodeId: string,
         videoUrl: string,
-        caption: string,
+        title: string,
         width: number,
         height: number,
         duration: number,
-        content: string,
         position: { x: number; y: number }
     ) {
-        super(nodeId, content, position);
+        super(nodeId, position);
         this.nodeId = nodeId;
         this.videoUrl = videoUrl;
-        this.caption = caption;
+        this.title = title;
         this.width = width;
         this.height = height;
         this.duration = duration;

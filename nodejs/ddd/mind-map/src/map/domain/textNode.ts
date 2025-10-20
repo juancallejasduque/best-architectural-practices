@@ -20,7 +20,7 @@ export class TextNode extends Node {
         underline: boolean,
         position: { x: number; y: number }
     ) {
-        super(nodeId, textContent, position);
+        super(nodeId, position);
         this.nodeId = nodeId;
         this.textContent = textContent;
         this.fontSize = fontSize;

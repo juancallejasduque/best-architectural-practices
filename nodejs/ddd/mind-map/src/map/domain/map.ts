@@ -8,11 +8,13 @@ import { MapTitle } from "./mapTitle";
 export class MapEntity {
     private readonly id: MapId;
     private title: MapTitle;
+    private description?: string | undefined;
     private author: Author;
 
-    constructor(id: string, title: string, author: Author) {
+    constructor(id: string, title: string, author: Author, description?: string) {
         this.id = new MapId(id);
         this.title = new MapTitle(title);
         this.author = author;
+        this.description = description;
     }
 }

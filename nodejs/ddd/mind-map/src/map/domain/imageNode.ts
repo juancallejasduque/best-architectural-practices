@@ -6,22 +6,22 @@ import { Node } from "./node";
 export class ImageNode extends Node {
     private nodeId: string;
     private imageUrl: string;
-    private caption: string;
+    private title: string;
     private width: number;
     private height: number;
 
     constructor(
         nodeId: string,
         imageUrl: string,
-        caption: string,
+        title: string,
         width: number,
         height: number,
         position: { x: number; y: number }
     ) {
-        super(nodeId, caption, position);
+        super(nodeId, position);
         this.nodeId = nodeId;
         this.imageUrl = imageUrl;
-        this.caption = caption;
+        this.title = title;
         this.width = width;
         this.height = height;
     }
