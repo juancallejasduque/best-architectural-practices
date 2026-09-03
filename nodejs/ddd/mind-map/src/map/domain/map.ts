@@ -1,0 +1,20 @@
+import { Author } from "./author";
+import { MapId } from "./mapId";
+import { MapTitle } from "./mapTitle";
+
+/**
+ * Map Entity representing a mind map.
+ */
+export class MapEntity {
+    private readonly id: MapId;
+    private title: MapTitle;
+    private description?: string | undefined;
+    private author: Author;
+
+    constructor(id: string, title: string, author: Author, description?: string) {
+        this.id = new MapId(id);
+        this.title = new MapTitle(title);
+        this.author = author;
+        this.description = description;
+    }
+}
